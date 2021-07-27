@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockRain(Tetris)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Aerolab/blockrain.js/dist/blockrain.css" />
+    <style>
+        .game{
+            width: 250px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        body{
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Aerolab/blockrain.js/dist/blockrain.jquery.min.js"></script>
+    <script>
+        $('.game').blockrain({   
+            autoplay: false,
+            autoplayRestart: false,
+            autoBlockWidth: true,
+            showFieldOnStart:true,
+            autoBlockSize:24,
+            difficulty:'nice',//'normal','nice'
+            speed:20,
+            theme:'retro',//candy,modern,retro,vim,,monochrome,gameboy,aerolab
+            playText: 'テトリスで遊ぶ',
+            playButtonText:'いくぞ！',
+            gameOverText:'やられた〜',
+            restartButtonText:'もう一回！',
+            scoreText:'点数',
+            // 'theme':{
+            //     background: '#ffffff',
+            //     primary: '#ff7b00',
+            //     secondary: '#000000'
+            // }
+        });
+    </script>
+</body>
+</html>
