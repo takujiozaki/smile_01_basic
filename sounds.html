@@ -7,11 +7,11 @@
     <title>Fanfare</title>
 </head>
 <body>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
-    <button id="pause">pause</button>
+    <button id="start"><img src="./play_arrow_black_24dp.svg" alt="">&nbsp;start</button>
+    <button id="stop"><img src="./replay_black_24dp.svg" alt="">&nbsp;replay</button>
+    <button id="pause"><img src="./pause_black_24dp.svg" alt="">&nbsp;pause</button>
     <input type="range" id="volume" name="volume" min="0" max="10" step="2">
-    <label for="volume">Volume</label>
+    <label for="volume"><img src="./volume_off_black_24dp.svg" alt="">&nbsp;Volume&nbsp;<img src="./volume_up_black_24dp.svg" alt=""></label>
     <script>
         const music = new Audio();
         function init(){
